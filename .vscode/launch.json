@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug tictactoe.cpp",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/tictactoe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": true,  // ✅ This line is the key
+      "MIMode": "lldb",
+      "preLaunchTask": "build tictactoe.cpp",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for LLDB",
+          "text": "settings set target.pretty-printing true",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

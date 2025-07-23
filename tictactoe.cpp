@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void basic(char L[999][999], int rows, int col)
+void basic(char L[18][18], int rows, int col)
     {
         int a=2, b=2;
         for(int i=0; i<17; i++)
@@ -64,7 +64,7 @@ void basic(char L[999][999], int rows, int col)
     
     }
 
-void input(char L[999][999] , int row, int col, char play1[], char play2[], int j)
+void input(char L[18][18] , int row, int col, char play1[], char play2[], int j)
 {
     if(j%2==0)
     {
@@ -76,7 +76,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                 switch(n)
                 {
                     case 1:
-                            if(L[2][2]!='X'||L[2][2]!='O')
+                            if(L[2][2]!='X' && L[2][2]!='O')
                             {
                                 L[2][2]='X';
                             }
@@ -87,7 +87,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                             }
                             break;
                     case 2:
-                            if(L[2][8]!='X'||L[2][8]!='O')
+                            if(L[2][8]!='X'&& L[2][8]!='O')
                             {
                                 L[2][8]='X';
                             }
@@ -98,7 +98,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                             }
                             break;
                     case 3:
-                            if(L[2][14]!='X'||L[2][14]!='O')
+                            if(L[2][14]!='X'&& L[2][14]!='O')
                             {
                                 L[2][14]='X';
                             }
@@ -109,7 +109,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                             }
                             break;
                     case 4:
-                            if(L[8][2]!='X'||L[8][2]!='O')
+                            if(L[8][2]!='X'&&L[8][2]!='O')
                             {
                                 L[8][2]='X';
                             }
@@ -120,7 +120,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                             }
                             break;
                     case 5:
-                            if(L[8][8]!='X'||L[8][8]!='O')
+                            if(L[8][8]!='X'&&L[8][8]!='O')
                             {
                                 L[8][8]='X';
                             }
@@ -131,7 +131,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                             }
                             break;
                     case 6:
-                            if(L[8][14]!='X'||L[8][14]!='O')
+                            if(L[8][14]!='X'&&L[8][14]!='O')
                             {
                                 L[8][14]='X';
                             }
@@ -142,7 +142,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                             }
                             break;
                     case 7:
-                            if(L[14][2]!='X'||L[14][2]!='O')
+                            if(L[14][2]!='X'&&L[14][2]!='O')
                             {
                                 L[14][2]='X';
                             }
@@ -153,7 +153,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                             }
                             break;
                     case 8:
-                            if(L[14][8]!='X'||L[14][8]!='O')
+                            if(L[14][8]!='X'&&L[14][8]!='O')
                             {
                                 L[14][8]='X';
                             }
@@ -164,7 +164,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                             }
                             break;
                     case 9:
-                            if(L[14][14]!='X'||L[14][14]!='O')
+                            if(L[14][14]!='X'&&L[14][14]!='O')
                             {
                                 L[14][14]='X';
                             }
@@ -193,7 +193,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
             switch(n)
             {
                 case 1:
-                        if(L[2][2]!='X'||L[2][2]!='O')
+                        if(L[2][2]!='X'&&L[2][2]!='O')
                         {
                             L[2][2]='O';
                         }
@@ -204,7 +204,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                         }
                         break;
                 case 2:
-                        if(L[2][8]!='X'||L[2][8]!='O')
+                        if(L[2][8]!='X'&&L[2][8]!='O')
                         {
                             L[2][8]='O';
                         }
@@ -215,7 +215,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                         }
                         break;
                 case 3:
-                        if(L[2][14]!='X'||L[2][14]!='O')
+                        if(L[2][14]!='X'&&L[2][14]!='O')
                         {
                             L[2][14]='O';
                         }
@@ -226,7 +226,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                         }
                         break;
                 case 4:
-                        if(L[8][2]!='X'||L[8][2]!='O')
+                        if(L[8][2]!='X'&&L[8][2]!='O')
                         {
                            L[8][2]='O';
                         }
@@ -237,7 +237,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                         }
                         break;
                 case 5:
-                        if(L[8][8]!='X'||L[8][8]!='O')
+                        if(L[8][8]!='X'&&L[8][8]!='O')
                         {
                             L[8][8]='O';
                         }
@@ -248,7 +248,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                         }
                         break;
                 case 6:
-                        if(L[8][14]!='X'||L[8][14]!='O')
+                        if(L[8][14]!='X'&&L[8][14]!='O')
                         {
                             L[8][14]='O';
                         }
@@ -259,7 +259,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                         }
                         break;
                 case 7:
-                        if(L[14][2]!='X'||L[14][2]!='O')
+                        if(L[14][2]!='X'&&L[14][2]!='O')
                         {
                             L[14][2]='O';
                         }
@@ -270,7 +270,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                         }
                         break;
                 case 8:
-                        if(L[14][8]!='X'||L[14][8]!='O')
+                        if(L[14][8]!='X'&&L[14][8]!='O')
                         {
                             L[14][8]='O';
                         }
@@ -281,7 +281,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
                         }
                         break;
                 case 9:
-                        if(L[14][14]!='X'||L[14][14]!='O')
+                        if(L[14][14]!='X'&&L[14][14]!='O')
                         {
                             L[14][14]='O';
                         }
@@ -303,7 +303,7 @@ void input(char L[999][999] , int row, int col, char play1[], char play2[], int 
 
 
 
-int check_hoz_X( char L[999][999], int row, int col, char* play1, int j)
+int check_hoz_X( char L[18][18], int row, int col, char* play1, int j)
 {
     int a=2, b=2;
     int x, count1=0, count2=0, count3=0;
@@ -354,7 +354,7 @@ int check_hoz_X( char L[999][999], int row, int col, char* play1, int j)
     return x;
 }
 
-int check_hoz_O( char L[999][999], int row, int col, char* play2, int j)
+int check_hoz_O( char L[18][18], int row, int col, char* play2, int j)
 
 {
     int a=2, b=2;
@@ -409,7 +409,7 @@ int check_hoz_O( char L[999][999], int row, int col, char* play2, int j)
 
 
 
-int check_vert_X( char L[999][999], int row, int col, char* play1,  int j)
+int check_vert_X( char L[18][18], int row, int col, char* play1,  int j)
 {
     int a=2, b=2;
     int y, count1=0, count2=0, count3=0;
@@ -427,7 +427,7 @@ int check_vert_X( char L[999][999], int row, int col, char* play1,  int j)
             }
         }
 
-        else if(L[a][b+12]=='X')
+        else if(L[a][b+6]=='X')
         {
             count2++;
             a=a+6;
@@ -458,7 +458,7 @@ int check_vert_X( char L[999][999], int row, int col, char* play1,  int j)
     return y;
 }   
 
-int check_vert_O( char L[999][999], int row, int col, char* play2, int j)
+int check_vert_O( char L[18][18], int row, int col, char* play2, int j)
 {
     int a=2, b=2;
     int q, count1=0, count2=0, count3=0;
@@ -511,7 +511,7 @@ int check_vert_O( char L[999][999], int row, int col, char* play2, int j)
 
 
 
-int check_diag_X(char L[999][999], int row, int col, char* play1, int j)
+int check_diag_X(char L[18][18], int row, int col, char* play1, int j)
 {
     int z;
     if(L[8][8]!='X')
@@ -551,7 +551,7 @@ int check_diag_X(char L[999][999], int row, int col, char* play1, int j)
     return z;
 }
 
-int check_diag_O(char L[999][999], int row, int col, char* play2, int j)
+int check_diag_O(char L[18][18], int row, int col, char* play2, int j)
 {
     int r;
     if(L[8][8] !='O')
@@ -592,7 +592,7 @@ int check_diag_O(char L[999][999], int row, int col, char* play2, int j)
 }
 
 
-void disp(char L[999][999], int row, int col, char play1[], char play2[], int j)
+void disp(char L[18][18], int row, int col, char play1[], char play2[], int j)
 {
         int a=2, b=2;
         for(int i=0; i<17; i++)
@@ -640,8 +640,8 @@ void disp(char L[999][999], int row, int col, char play1[], char play2[], int j)
 
 int main()
 {
-    char table [999][999];
-    char play1[9999], play2[9999];
+    char table [18][18];
+    char play1[189], play2[189];
     cout<<"\n\n";
     cout<<"enter the name of 1st player: ";
     cin>>play1;

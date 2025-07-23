@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build tictactoe.cpp",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "tictactoe.cpp",
+        "-o",
+        "tictactoe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
